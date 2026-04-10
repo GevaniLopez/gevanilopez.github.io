@@ -8,8 +8,7 @@
 </head>
 <body>
   <header class="hero">
-  <div class="hero-glow"></div>
-  <div class="moon" aria-hidden="true"></div>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
 
   <div class="hero-content">
     <p class="eyebrow">Portfolio</p>
@@ -25,14 +24,6 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
-  </div>
-
-  <div class="hero-wave" aria-hidden="true">
-    <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
-      <path
-        d="M0,96L60,101.3C120,107,240,117,360,117.3C480,117,600,107,720,90.7C840,75,960,53,1080,58.7C1200,64,1320,96,1380,112L1440,128L1440,181L1380,181C1320,181,1200,181,1080,181C960,181,840,181,720,181C600,181,480,181,360,181C240,181,120,181,60,181L0,181Z">
-      </path>
-    </svg>
   </div>
 </header>
 
@@ -108,5 +99,6 @@
       </p>
     </section>
   </main>
+  <script src="hero.js"></script>
 </body>
 </html>
