@@ -155,6 +155,75 @@ h1 {
   color: var(--text-soft);
 }
 
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 7rem 1.5rem 5rem;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, #050c14 0%, #08111c 45%, #0b1720 100%);
+}
+
+#hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 12, 20, 0.18) 0%,
+      rgba(5, 12, 20, 0.12) 30%,
+      rgba(5, 12, 20, 0.3) 65%,
+      rgba(5, 12, 20, 0.76) 100%
+    );
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #d7c1a3;
+}
+
+.hero h1 {
+  margin: 0;
+  max-width: 8ch;
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  line-height: 0.94;
+  letter-spacing: -0.045em;
+  color: #f4efe7;
+}
+
+.intro {
+  max-width: 720px;
+  margin-top: 1.5rem;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  color: #ddd4c7;
+}
+
 .hero-links {
   display: flex;
   flex-wrap: wrap;
@@ -169,37 +238,18 @@ h1 {
   padding: 0.82rem 1.15rem;
   border-radius: 999px;
   text-decoration: none;
-  color: var(--text);
-  border: 1px solid rgba(169, 216, 219, 0.18);
-  background: rgba(255, 255, 255, 0.025);
-  backdrop-filter: blur(10px);
+  color: #f4efe7;
+  border: 1px solid rgba(169, 216, 219, 0.22);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
 }
 
 .hero-links a:hover {
   transform: translateY(-2px);
-  border-color: rgba(95, 168, 211, 0.42);
-  background: rgba(95, 168, 211, 0.08);
-  color: var(--sand);
-}
-
-.hero-wave {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -2px;
-  width: 100%;
-  line-height: 0;
-}
-
-.hero-wave svg {
-  display: block;
-  width: 100%;
-  height: 160px;
-}
-
-.hero-wave path {
-  fill: rgba(9, 18, 28, 0.96);
+  border-color: rgba(95, 168, 211, 0.45);
+  background: rgba(95, 168, 211, 0.1);
+  color: #d7c1a3;
 }
 
 main {
