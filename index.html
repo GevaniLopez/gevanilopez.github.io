@@ -7,50 +7,93 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Gevani Lopez</h1>
-    <p>Data analytics graduate focused on turning raw data into clear business decisions.</p>
+  <header class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Gevani Lopez</h1>
+      <p class="intro">
+        I’m a data analytics graduate building projects that turn raw data into clear,
+        useful insights. My work focuses on data cleaning, analysis, visualization,
+        and explaining results in a way that supports better decisions.
+      </p>
+
+      <div class="hero-links">
+        <a href="https://github.com/GevaniLopez" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section>
+    <section class="section" id="about">
       <h2>About Me</h2>
       <p>
-        I’m building a portfolio that shows how I approach real data problems through
-        cleaning, analysis, visualization, and practical interpretation. My background
-        includes Python, SQL, dashboards, and project-based analytics work.
+        I created this portfolio to show how I approach real data problems from start
+        to finish. That includes preparing messy data, exploring patterns, creating
+        visualizations, and interpreting results honestly instead of forcing conclusions.
+      </p>
+      <p>
+        My background includes Python, SQL, dashboards, and project-based analytics
+        work. As I continue building this site, I want it to reflect both my technical
+        skills and the way I think through problems in a practical, grounded way.
       </p>
     </section>
 
-    <section>
+    <section class="section" id="projects">
       <h2>Projects</h2>
 
-      <div class="project-card">
-        <h3>Housing Affordability Analysis Across U.S. States</h3>
-        <p>
-          A state-level analysis of housing affordability using Census income data,
-          FHFA housing data, Python, and data visualizations.
-        </p>
-        <p>
-          <a href="https://github.com/GevaniLopez/housing-affordability-analysis" target="_blank" rel="noopener noreferrer">
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Housing Affordability Analysis Across U.S. States</h3>
+          <p>
+            A state-level analysis that compares median household income, home price
+            growth, and affordability patterns across the United States using Python,
+            Census data, and FHFA housing data.
+          </p>
+          <p>
+            This project focused on identifying which states appeared more affordable
+            for first-time homebuyers and showing how affordability changes when income
+            and housing trends are looked at together.
+          </p>
+          <a
+            href="https://github.com/GevaniLopez/housing-affordability-analysis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             View Project on GitHub
           </a>
-        </p>
+        </article>
+
+        <article class="project-card">
+          <h3>More Projects in Progress</h3>
+          <p>
+            I’m currently building additional portfolio projects that will show more of
+            my work in data pipelines, business-focused analysis, and practical problem solving.
+          </p>
+          <p>
+            This site is still growing, and I plan to keep adding projects that reflect
+            both my technical development and my ability to connect data to real decisions.
+          </p>
+        </article>
       </div>
     </section>
 
-    <section>
+    <section class="section" id="resume">
       <h2>Resume</h2>
-      <p>Resume section coming soon.</p>
+      <p>
+        I’m continuing to update my portfolio and project materials. A dedicated resume
+        section will be added here as the site develops.
+      </p>
     </section>
 
-    <section>
+    <section class="section" id="contact">
       <h2>Contact</h2>
       <p>
-        GitHub:
+        You can find more of my work on
         <a href="https://github.com/GevaniLopez" target="_blank" rel="noopener noreferrer">
-          github.com/GevaniLopez
-        </a>
+          GitHub
+        </a>.
       </p>
     </section>
   </main>
