@@ -311,7 +311,7 @@ a {
     height: auto;
     padding-top: 7rem;
     padding-bottom: 4rem;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .hero-content {
