@@ -141,7 +141,20 @@ body {
   padding: 0 1rem;
   margin: 0 auto;
   text-align: left;
-  transform: translateX(-120px);
+  transform: translateX(-60px);
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(-60px);
+  }
 }
 
 .hero-content h1 {
@@ -153,7 +166,7 @@ body {
 }
 
 .hero-content p {
-  max-width: 620px;
+  max-width: 520px;
   color: var(--text-soft);
   font-size: 1.08rem;
   margin: 0 0 2rem;
@@ -200,7 +213,7 @@ body {
 .hero-buttons a:not(.primary-btn) {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.22);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(8px);
 }
 
@@ -208,6 +221,13 @@ body {
   border-color: var(--sand);
   color: var(--sand);
   transform: translateY(-2px);
+}
+
+.scroll-hint {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.1em;
 }
 
 /* ================= MAIN ================= */
