@@ -393,8 +393,8 @@ section p {
 
 .featured-project-card {
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  gap: 1.75rem;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 1.25rem;
   align-items: stretch;
   background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
   border: 1px solid var(--border);
@@ -413,7 +413,7 @@ section p {
 .project-preview-wrap {
   position: relative;
   min-height: 100%;
-  padding: 1.1rem;
+  padding: 0.55rem;
   background: linear-gradient(180deg, #201611 0%, #2b1f18 100%);
   display: flex;
   align-items: center;
@@ -424,8 +424,9 @@ section p {
   display: block;
   width: 100%;
   height: auto;
-  min-height: 0;
+  max-height: 520px;
   object-fit: contain;
+  object-position: center;
   border-radius: 18px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
 }
