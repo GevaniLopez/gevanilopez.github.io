@@ -143,7 +143,7 @@ body {
   width: min(1200px, calc(100% - 2rem));
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 48% 52%;
+  grid-template-columns: 46% 54%;
   align-items: center;
   animation: fadeUp 1.3s ease forwards;
   opacity: 0;
@@ -154,42 +154,42 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 0.5rem;
+  padding-left: 0;
 }
 
 .hero-kicker {
-  margin: 0 0 1rem;
+  margin: 0 0 1.1rem;
   max-width: none;
-  font-size: 1rem;
+  font-size: 1.08rem;
   color: var(--sand);
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.22);
 }
 
 .hero-content h1 {
-  margin: 0 0 1.5rem;
-  max-width: 560px;
-  font-size: clamp(3.6rem, 6vw, 5.8rem);
-  line-height: 0.95;
-  letter-spacing: -0.05em;
+  margin: 0 0 1.6rem;
+  max-width: 620px;
+  font-size: clamp(4.2rem, 6.5vw, 6.6rem);
+  line-height: 0.93;
+  letter-spacing: -0.055em;
   color: var(--text);
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.22);
 }
 
 .hero-role {
-  margin: 0 0 1.75rem;
+  margin: 0 0 1.9rem;
   max-width: none;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--sand);
   font-weight: 600;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.22);
 }
 
 .hero-description {
-  max-width: 500px;
-  margin: 0 0 2.75rem;
+  max-width: 520px;
+  margin: 0 0 3rem;
   color: var(--text-soft);
-  font-size: 1.12rem;
-  line-height: 1.8;
+  font-size: 1.14rem;
+  line-height: 1.85;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.22);
 }
 
@@ -218,11 +218,11 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 52px;
-  padding: 0.9rem 1.5rem;
+  min-height: 56px;
+  padding: 1rem 1.65rem;
   border-radius: var(--radius-pill);
   text-decoration: none;
-  font-size: 0.98rem;
+  font-size: 1rem;
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
@@ -415,17 +415,22 @@ a {
   }
 
   .hero-content h1 {
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     line-height: 0.98;
   }
 
+  .hero-kicker {
+    font-size: 0.98rem;
+  }
+
   .hero-role {
-    font-size: 1.05rem;
+    font-size: 1.02rem;
   }
 
   .hero-description {
     font-size: 0.98rem;
     max-width: 100%;
+    margin-bottom: 2.25rem;
   }
 
   .hero-buttons {
@@ -434,6 +439,8 @@ a {
 
   .hero-buttons a {
     width: 100%;
+    min-height: 52px;
+    padding: 0.95rem 1.2rem;
   }
 
   .scroll-hint {
