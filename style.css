@@ -88,6 +88,19 @@ body {
   z-index: 1;
 }
 
+.hero-kicker {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: var(--sand);
+}
+
+.hero-role {
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+  color: var(--sand);
+  font-weight: 500;
+}
+
 /* NAV */
 
 .nav {
