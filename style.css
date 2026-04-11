@@ -339,6 +339,20 @@ body {
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.22);
 }
 
+.resume-actions {
+  margin-top: 1.5rem;
+}
+
+.resume-actions .primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0.95rem 1.5rem;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+}
+
 /* ================= MAIN ================= */
 
 main {
