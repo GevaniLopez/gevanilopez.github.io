@@ -54,9 +54,9 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transform: scale(1.05);
+  transform: scale(1.0);
   z-index: 0;
-  animation: heroFloat 14s ease-in-out infinite alternate;
+  animation: heroFloat 8s ease-in-out infinite alternate;
 }
 
 @keyframes heroFloat {
@@ -162,7 +162,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
 
-  animation: fadeUp 1s ease forwards;
+  animation: fadeUp 1.2s ease forwards;
   opacity: 0;
 }
 
@@ -186,11 +186,11 @@ body {
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(60px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -416,7 +416,7 @@ a {
   .hero-content {
     padding: 0 1rem;
     transform: none;
-    animation: fadeUpMobile 1s ease forwards;
+    animation: fadeUpMobile 1.2s ease forwards;
     opacity: 0;
   }
 
@@ -456,10 +456,10 @@ a {
 @keyframes fadeUpMobile {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(30px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
