@@ -85,44 +85,91 @@
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <h2>Projects</h2>
+    <section class="section projects-section" id="projects">
+  <p class="section-kicker">Projects</p>
+  <h2>Featured Work</h2>
+  <p class="projects-intro">
+    A selection of projects that reflect how I approach analysis, decision support,
+    and structured data work.
+  </p>
 
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3>Housing Affordability for First-Time Homebuyers Across U.S. States</h3>
-          <p>
-            A state-level analysis that combines median household income, FHFA housing data,
-            and recent home price growth to evaluate where first-time homeownership appears
-            more or less affordable across the United States.
-          </p>
-          <p>
-            This project focuses on using multiple indicators together instead of relying on
-            home prices alone, helping create a clearer picture of affordability patterns and
-            how they may affect decision-making.
-          </p>
+  <div class="featured-projects">
+    <article class="featured-project-card">
+      <div class="project-preview-wrap">
+        <img
+          src="images/housing-preview.png"
+          alt="Preview of housing affordability project"
+          class="project-preview"
+        />
+      </div>
+
+      <div class="project-info">
+        <p class="project-label">Business Analysis</p>
+        <h3>Housing Affordability for First-Time Homebuyers Across U.S. States</h3>
+        <p class="project-summary">
+          A state-level analysis that combines median household income, FHFA housing data,
+          and recent home price growth to evaluate where first-time homeownership appears
+          more or less affordable across the United States.
+        </p>
+        <p class="project-summary">
+          This project focuses on using multiple indicators together instead of relying on
+          home prices alone, helping create a clearer picture of affordability patterns and
+          how they may affect decision-making.
+        </p>
+
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>Regression</span>
+          <span>K-Means</span>
+          <span>Data Visualization</span>
+        </div>
+
+        <div class="project-actions">
           <a
             href="https://github.com/GevaniLopez/housing-affordability-analysis"
+            class="primary-btn"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Project on GitHub
+            View Project
           </a>
-        </article>
-
-        <article class="project-card">
-          <h3>More Projects in Progress</h3>
-          <p>
-            I’m currently building additional portfolio projects that will show more of
-            my work in data pipelines, business-focused analysis, and practical problem solving.
-          </p>
-          <p>
-            This site is still growing, and I plan to keep adding projects that reflect
-            both my technical development and my ability to connect data to real decisions.
-          </p>
-        </article>
+        </div>
       </div>
-    </section>
+    </article>
+
+    <article class="featured-project-card compact-card">
+      <div class="project-info">
+        <p class="project-label">Data Workflow</p>
+        <h3>Weather Data Application</h3>
+        <p class="project-summary">
+          A Python ETL application that ingests historical weather data from an external API,
+          validates and standardizes records, and loads structured results into SQLite for
+          querying and trend analysis.
+        </p>
+
+        <div class="project-tags">
+          <span>Python</span>
+          <span>SQLite</span>
+          <span>SQLAlchemy</span>
+          <span>ETL</span>
+          <span>Validation</span>
+        </div>
+
+        <div class="project-actions">
+          <a
+            href="https://github.com/GevaniLopez/python-weather-etl-app"
+            class="primary-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
     <section class="section" id="resume">
       <h2>Resume</h2>
