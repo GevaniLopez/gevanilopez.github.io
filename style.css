@@ -521,18 +521,24 @@ section p {
 }
 
 .project-showcase {
+  grid-template-columns: 1.05fr 1.2fr;
   align-items: stretch;
 }
 
-.reverse-layout {
-  grid-template-columns: 1.05fr 1.2fr;
+.project-showcase .project-info {
+  padding: 2rem;
 }
 
-.project-showcase .project-text {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.project-showcase .project-info h3 {
+  max-width: 14ch;
+}
+
+.project-showcase .project-summary {
+  max-width: 60ch;
+}
+
+.project-showcase .project-actions {
+  margin-top: 0.35rem;
 }
 
 .project-visual-stack {
@@ -544,6 +550,9 @@ section p {
 }
 
 .project-visual-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(224, 193, 155, 0.14);
   border-radius: 20px;
@@ -566,10 +575,11 @@ section p {
   object-fit: contain;
   object-position: center;
   background: transparent;
+  border-radius: 18px;
 }
 
 @media (max-width: 1100px) {
-  .reverse-layout {
+  .project-showcase {
     grid-template-columns: 1fr;
   }
 
@@ -587,7 +597,7 @@ section p {
 }
 
 @media (max-width: 700px) {
-  .project-showcase .project-text {
+  .project-showcase .project-info {
     padding: 1.4rem;
   }
 
