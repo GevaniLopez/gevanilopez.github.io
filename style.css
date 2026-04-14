@@ -929,23 +929,23 @@ a {
 
 .reveal-title.reveal-visible,
 .reveal-project-title.reveal-visible {
-  animation: titlePopShake 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: titlePopShake 1.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .reveal-kicker.reveal-visible {
-  animation: kickerPopShake 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: kickerPopShake 1.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .reveal-delay-1 {
-  animation-delay: 0.08s;
+  animation-delay: 0.12s;
 }
 
 .reveal-delay-2 {
-  animation-delay: 0.16s;
+  animation-delay: 0.24s;
 }
 
 .reveal-delay-3 {
-  animation-delay: 0.24s;
+  animation-delay: 0.36s;
 }
 
 @keyframes titlePopShake {
@@ -953,18 +953,24 @@ a {
     opacity: 0;
     transform: translateY(18px) scale(0.92) rotate(0deg);
   }
-  45% {
+  22% {
     opacity: 1;
-    transform: translateY(0) scale(1.09) rotate(0deg);
+    transform: translateY(0) scale(1.11) rotate(0deg);
   }
-  58% {
-    transform: translateY(0) scale(1.05) rotate(-1.4deg);
+  38% {
+    transform: translateY(0) scale(1.11) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0) scale(1.08) rotate(-1.6deg);
+  }
+  60% {
+    transform: translateY(0) scale(1.06) rotate(1.4deg);
   }
   70% {
-    transform: translateY(0) scale(1.03) rotate(1.2deg);
+    transform: translateY(0) scale(1.04) rotate(-1deg);
   }
-  82% {
-    transform: translateY(0) scale(1.01) rotate(-0.7deg);
+  80% {
+    transform: translateY(0) scale(1.02) rotate(0.6deg);
   }
   100% {
     opacity: 1;
@@ -977,15 +983,18 @@ a {
     opacity: 0;
     transform: translateY(12px) scale(0.96);
   }
-  45% {
+  25% {
     opacity: 1;
-    transform: translateY(0) scale(1.05);
+    transform: translateY(0) scale(1.06);
   }
-  62% {
-    transform: translateY(0) scale(1.02) rotate(-0.8deg);
+  42% {
+    transform: translateY(0) scale(1.06);
   }
-  76% {
-    transform: translateY(0) scale(1.01) rotate(0.7deg);
+  56% {
+    transform: translateY(0) scale(1.03) rotate(-0.9deg);
+  }
+  68% {
+    transform: translateY(0) scale(1.02) rotate(0.8deg);
   }
   100% {
     opacity: 1;
