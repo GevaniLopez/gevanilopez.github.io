@@ -484,6 +484,118 @@ section p {
   margin-top: 0.25rem;
 }
 
+.project-link-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  min-height: 54px;
+  padding: 0.95rem 1.2rem 0.95rem 1.35rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #18110c;
+  background: linear-gradient(
+    135deg,
+    #f2d8b6 0%,
+    var(--sand) 42%,
+    var(--sand-2) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 12px 30px rgba(210, 172, 122, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.34);
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    filter 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.project-link-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.12) 30%,
+    rgba(255, 255, 255, 0.42) 48%,
+    rgba(255, 255, 255, 0.12) 66%,
+    transparent 100%
+  );
+  transform: translateX(-130%);
+  animation: projectButtonSheen 5.5s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes projectButtonSheen {
+  0%, 78%, 100% {
+    transform: translateX(-130%);
+  }
+  88% {
+    transform: translateX(130%);
+  }
+}
+
+.project-link-btn:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow:
+    0 18px 38px rgba(210, 172, 122, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.38);
+  filter: saturate(1.05);
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
+.project-link-btn:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.project-link-text {
+  position: relative;
+  z-index: 2;
+}
+
+.project-link-arrow {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: rgba(35, 26, 21, 0.14);
+  color: #24160f;
+  font-size: 1rem;
+  line-height: 1;
+  transition:
+    transform 0.22s ease,
+    background 0.22s ease,
+    color 0.22s ease;
+}
+
+.project-link-btn:hover .project-link-arrow {
+  transform: translate(3px, -1px) rotate(-8deg);
+  background: rgba(35, 26, 21, 0.2);
+  color: #18110c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-link-btn::before {
+    animation: none;
+  }
+
+  .project-link-btn,
+  .project-link-arrow {
+    transition: none;
+  }
+}
+
 .compact-card {
   grid-template-columns: 1fr;
 }
