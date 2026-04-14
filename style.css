@@ -1107,6 +1107,52 @@ a {
 
   /* use this only if the hero art is a CSS background image */
   .hero {
-    background-position: 70% center;
+    background-position: 58% center;
   }
+}
+
+/* stop side-scrolling / weird mobile overflow */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+/* make sure main sections do not exceed screen width */
+.hero,
+.nav,
+.nav-content,
+.hero-content,
+.hero-text {
+  max-width: 100%;
+}
+
+/* rebalance the hero image */
+.hero {
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* prevent buttons / text from forcing extra width */
+.hero-buttons {
+  flex-wrap: wrap;
+}
+
+.hero-buttons a {
+  max-width: 100%;
+}
+
+/* protect against random elements stretching layout */
+img,
+canvas,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
