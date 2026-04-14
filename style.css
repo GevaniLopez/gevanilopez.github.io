@@ -511,7 +511,7 @@ section p {
 
 .project-showcase-info h3 {
   margin: 0 0 1.15rem;
-  max-width: 18ch;
+  max-width: 22ch;
   font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1.05;
 }
