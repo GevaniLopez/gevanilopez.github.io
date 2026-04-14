@@ -1015,135 +1015,211 @@ a {
   }
 }
 
-/* ================= MOBILE ================= */
+/* ================= MOBILE POLISH OVERRIDES ================= */
 
 @media (max-width: 900px) {
-  .hero {
-    min-height: 720px;
-    height: auto;
-    padding-top: 7rem;
-    padding-bottom: 4rem;
-    align-items: center;
-  }
-
-  .hero-content {
-    width: min(1100px, calc(100% - 2rem));
-    grid-template-columns: 1fr;
-    text-align: center;
-    animation: fadeUpMobile 1s ease forwards;
-    opacity: 0;
-  }
-
-  .hero-text {
-    grid-column: 1;
-    align-items: center;
-    padding-left: 0;
-  }
-
-  .hero-description {
-    max-width: 560px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-buttons {
-    justify-content: center;
+  .nav {
+    padding: 1rem 1rem 0;
   }
 
   .nav-content {
-    flex-direction: column;
-    gap: 1rem;
+    gap: 0.85rem;
   }
 
   .nav-links {
-    justify-content: center;
+    gap: 0.6rem 1rem;
+  }
+
+  .hero {
+    min-height: 680px;
+    padding-top: 6.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-content {
+    width: min(100%, calc(100% - 1.5rem));
+  }
+
+  .hero-description {
+    max-width: 34rem;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0.8rem;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    min-height: 50px;
+    padding: 0.9rem 1.1rem;
+  }
+
+  .featured-projects {
     gap: 1.25rem;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .featured-project-card {
+    border-radius: 20px;
+  }
+
+  .project-info,
+  .project-showcase-info {
+    padding: 1.35rem;
+  }
+
+  .project-summary {
+    line-height: 1.7;
+  }
+
+  .project-tags {
+    gap: 0.55rem;
+    margin: 0.85rem 0 1.15rem;
+  }
+
+  .project-tags span {
+    font-size: 0.84rem;
+    min-height: 31px;
+    padding: 0.34rem 0.72rem;
+  }
+
+  .project-actions {
+    margin-top: 0.4rem;
+  }
+
+  .project-fun-btn {
+    width: 100%;
+    justify-content: space-between;
+    min-height: 50px;
+    padding: 0.82rem 0.95rem 0.82rem 1rem;
+  }
+
+  .project-fun-text-wrap {
+    min-width: 0;
   }
 }
 
 @media (max-width: 640px) {
   .hero {
-    min-height: 760px;
-    padding-top: 7.5rem;
-    padding-bottom: 3rem;
+    min-height: 620px;
+    padding-top: 6.25rem;
+    padding-bottom: 2.5rem;
   }
 
   .hero-bg {
-    object-position: 68% center;
+    object-position: 62% center;
   }
 
   .nav {
-    padding: 1rem 1rem 0;
+    padding: 0.9rem 0.9rem 0;
   }
 
   .logo {
-    text-align: center;
-    font-size: 1.05rem;
+    font-size: 1rem;
+    padding: 0.38rem 0.62rem;
   }
 
   .nav-links {
-    gap: 0.35rem 0.75rem;
+    justify-content: center;
+    gap: 0.45rem 0.8rem;
   }
 
   .nav-links a {
-    font-size: 0.88rem;
+    font-size: 0.84rem;
   }
 
   .hero-content h1 {
-    font-size: 2.9rem;
+    font-size: clamp(2.45rem, 10vw, 3.1rem);
     line-height: 0.98;
   }
 
   .hero-kicker {
-    font-size: 0.98rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
   }
 
   .hero-role {
-    font-size: 1.02rem;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
   }
 
   .hero-description {
-    font-size: 0.98rem;
-    max-width: 100%;
-    margin-bottom: 2.25rem;
-  }
-
-  .hero-buttons {
-    gap: 0.75rem;
-  }
-
-  .hero-buttons a {
-    width: 100%;
-    min-height: 52px;
-    padding: 0.95rem 1.2rem;
+    font-size: 0.96rem;
+    margin-bottom: 1.8rem;
   }
 
   .scroll-hint {
-    margin-top: 1.5rem;
-    font-size: 0.78rem;
+    margin-top: 1.1rem;
+    font-size: 0.75rem;
   }
 
   main {
-    width: min(var(--max-width), calc(100% - 1.25rem));
-    margin-top: 3rem;
+    width: calc(100% - 1rem);
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
   }
 
   section {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
-}
 
-@keyframes fadeUpMobile {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
+  .projects-intro {
+    margin-bottom: 1.3rem;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+
+  .project-preview-wrap {
+    padding: 0.45rem;
+  }
+
+  .project-showcase-info h3,
+  .project-info h3 {
+    font-size: 1.45rem;
+    line-height: 1.08;
+  }
+
+  .project-summary {
+    font-size: 0.95rem;
+  }
+
+  .project-showcase-media {
+    padding: 0.7rem;
+    gap: 0.7rem;
+  }
+
+  .project-visual-primary.wide-visual {
+    min-height: 220px;
+  }
+
+  .project-visual-secondary.wide-visual {
+    min-height: 165px;
+  }
+
+  .project-fun-btn {
+    min-height: 48px;
+    padding: 0.76rem 0.88rem 0.76rem 0.95rem;
+  }
+
+  .project-fun-text {
+    font-size: 0.9rem;
+  }
+
+  .project-fun-orb {
+    width: 26px;
+    height: 26px;
+    font-size: 0.9rem;
+  }
+
+  /* mobile titles: calmer motion */
+  .reveal-title.reveal-visible,
+  .reveal-project-title.reveal-visible {
+    animation-duration: 1.15s;
+  }
+
+  .reveal-kicker.reveal-visible {
+    animation-duration: 0.95s;
   }
 }
