@@ -929,76 +929,79 @@ a {
 
 .reveal-title.reveal-visible,
 .reveal-project-title.reveal-visible {
-  animation: titlePopShake 1.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: titlePopShake 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .reveal-kicker.reveal-visible {
-  animation: kickerPopShake 1.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: kickerPopShake 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .reveal-delay-1 {
-  animation-delay: 0.35s;
+  animation-delay: 0.7s;
 }
 
 .reveal-delay-2 {
-  animation-delay: 0.6s;
+  animation-delay: 1.4s;
 }
 
 .reveal-delay-3 {
-  animation-delay: 0.85s;
+  animation-delay: 2.1s;
 }
 
 @keyframes titlePopShake {
   0% {
     opacity: 0;
-    transform: scale(0.92) rotate(0deg);
+    transform: scale(0.92) translateX(0) rotate(0deg);
   }
   22% {
     opacity: 1;
-    transform: scale(1.11) rotate(0deg);
+    transform: scale(1.11) translateX(0) rotate(0deg);
   }
   38% {
-    transform: scale(1.11) rotate(0deg);
+    transform: scale(1.11) translateX(0) rotate(0deg);
   }
   50% {
-    transform: scale(1.08) rotate(-1.6deg);
+    transform: scale(1.08) translateX(-7px) rotate(-0.45deg);
   }
   60% {
-    transform: scale(1.06) rotate(1.4deg);
+    transform: scale(1.06) translateX(6px) rotate(0.35deg);
   }
   70% {
-    transform: scale(1.04) rotate(-1deg);
+    transform: scale(1.04) translateX(-4px) rotate(-0.22deg);
   }
   80% {
-    transform: scale(1.02) rotate(0.6deg);
+    transform: scale(1.02) translateX(2px) rotate(0.12deg);
   }
   100% {
     opacity: 1;
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) translateX(0) rotate(0deg);
   }
 }
 
 @keyframes kickerPopShake {
   0% {
     opacity: 0;
-    transform: scale(0.96);
+    transform: scale(0.96) translateX(0) rotate(0deg);
   }
   25% {
     opacity: 1;
-    transform: scale(1.06);
+    transform: scale(1.06) translateX(0) rotate(0deg);
   }
   42% {
-    transform: scale(1.06);
+    transform: scale(1.06) translateX(0) rotate(0deg);
   }
   56% {
-    transform: scale(1.03) rotate(-0.9deg);
+    transform: scale(1.03) translateX(-5px) rotate(-0.25deg);
   }
   68% {
-    transform: scale(1.02) rotate(0.8deg);
+    transform: scale(1.02) translateX(4px) rotate(0.2deg);
+  }
+  82% {
+    transform: scale(1.01) translateX(-2px) rotate(-0.1deg);
   }
   100% {
     opacity: 1;
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) translateX(0) rotate(0deg);
   }
 }
 
