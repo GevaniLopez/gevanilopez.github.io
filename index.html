@@ -34,9 +34,25 @@
           I enjoy solving problems, building dashboards, and telling data-driven stories.
         </p>
 
-        <div class="hero-buttons">
+        <div class="hero-buttons hero-cta-row">
           <a href="#projects" class="primary-btn">View Projects</a>
-          <a href="https://github.com/GevaniLopez" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+          <a
+            href="https://github.com/GevaniLopez"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="files/gevani-lopez-resume-v7.pdf"
+            class="resume-download-btn"
+            download
+          >
+            <span class="resume-download-icon">↓</span>
+            <span>Download Resume</span>
+          </a>
         </div>
 
         <p class="scroll-hint">Scroll ↓</p>
@@ -62,7 +78,7 @@
     <section class="section action-section" id="approach">
       <div class="action-grid">
         <div class="action-text">
-          <p>How I Work</p>
+          <p class="section-kicker">How I Work</p>
           <h2 class="reveal-title reveal-delay-1">Turning Analysis Into Action</h2>
           <p>
             I like work that goes beyond just finding patterns in data. For me, the best
@@ -86,8 +102,9 @@
     </section>
 
     <section class="section projects-section" id="projects">
-      <p>Projects</p>
+      <p class="section-kicker">Projects</p>
       <h2 class="reveal-title reveal-delay-1">Featured Work</h2>
+      <p class="projects-intro">
         A selection of projects that reflect how I approach analysis, decision support,
         and structured data work.
       </p>
@@ -246,7 +263,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                 <span class="project-fun-text-wrap">
+                <span class="project-fun-text-wrap">
                   <span class="project-fun-text-track">
                     <span class="project-fun-text">View Project</span>
                     <span class="project-fun-text">Explore Repo</span>
@@ -278,21 +295,161 @@
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <h2 class="reveal-title">Contact</h2>
-      <p>
-        You can find more of my work on
-        <a href="https://github.com/GevaniLopez" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>.
+    <section class="section resume-section" id="resume">
+      <div class="resume-shell">
+        <div class="resume-card resume-copy">
+          <p class="section-kicker">Resume</p>
+          <h2 class="reveal-title reveal-delay-1">Download the Resume Fast</h2>
+          <p>
+            For fast-moving recruiters, here’s a direct resume download without needing
+            to dig through the page. 
+          </p>
+          <p>
+            If you want a quick snapshot of my background before reaching out, this is
+            the easiest place to grab it.
+          </p>
+        </div>
+
+        <div class="resume-card resume-cta-card">
+          <p class="resume-mini-label">Quick Access</p>
+
+          <a
+            href="files/gevani-lopez-resume-v7.pdf"
+            class="resume-big-btn"
+            download
+          >
+            <span class="resume-big-icon">↓</span>
+            <span>Download Resume</span>
+          </a>
+
+          <a
+            href="files/gevani-lopez-resume-v7.pdf"
+            class="resume-secondary-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Preview in Browser
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <p class="section-kicker">Contact</p>
+      <h2 class="reveal-title reveal-delay-1">Let’s Make It Easy to Reach Me</h2>
+
+      <p class="contact-intro">
+        If something here feels relevant to your team, the fastest ways to reach me are below.
+        You can email me directly, connect on LinkedIn, or send a quick message through the form.
       </p>
+
+      <div class="contact-grid">
+        <div class="contact-card contact-methods">
+          <div class="contact-method">
+            <p class="contact-method-label">Email</p>
+            <a href="mailto:gevanilopez@gmail.com" class="contact-method-link">
+              gevanilopez@gmail.com
+            </a>
+            <p class="contact-method-copy">
+              Best for direct outreach, interview follow-up, or recruiter questions.
+            </p>
+          </div>
+
+          <div class="contact-method">
+            <p class="contact-method-label">LinkedIn</p>
+            <a
+              href="https://www.linkedin.com/in/gevani-lopez-ab1531231/"
+              class="contact-method-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect on LinkedIn
+            </a>
+            <p class="contact-method-copy">
+              A good option if you prefer professional outreach there first.
+            </p>
+          </div>
+
+          <div class="contact-method">
+            <p class="contact-method-label">GitHub</p>
+            <a
+              href="https://github.com/GevaniLopez"
+              class="contact-method-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View More Work
+            </a>
+            <p class="contact-method-copy">
+              Useful if you want to browse projects, code, and repository details.
+            </p>
+          </div>
+
+          <div class="contact-inline-actions">
+            <a
+              href="mailto:gevanilopez@gmail.com?subject=Interview%20Opportunity%20for%20Gevani%20Lopez"
+              class="primary-btn"
+            >
+              Email Me
+            </a>
+
+            <a
+              href="files/gevani-lopez-resume-v7.pdf"
+              class="contact-ghost-btn"
+              download
+            >
+              Download Resume
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card contact-form-card">
+          <p class="contact-form-label">Quick Message</p>
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+            method="POST"
+          >
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="your@email.com" required />
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="What would you like to talk about?"
+                required
+              ></textarea>
+            </label>
+
+            <button type="submit" class="primary-btn contact-submit-btn">
+              Send Message
+            </button>
+          </form>
+
+          <p class="contact-note">
+            To make this form send directly from the site, replace
+            <strong>YOUR_FORMSPREE_ID</strong> with your Formspree form ID.
+            Until then, the email button on the left is the easiest working contact option.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
-  
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const revealItems = document.querySelectorAll(
-        ".reveal-kicker, .reveal-title, .reveal-project-title"
+        ".reveal-title, .reveal-project-title"
       );
 
       const observer = new IntersectionObserver(
@@ -309,7 +466,7 @@
           rootMargin: "0px 0px -20px 0px"
         }
       );
-  
+
       revealItems.forEach((item) => observer.observe(item));
     });
   </script>
