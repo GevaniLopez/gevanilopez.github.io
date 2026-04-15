@@ -1611,3 +1611,12 @@ video {
     grid-template-columns: 1fr;
   }
 }
+
+.contact-grid-simple {
+  grid-template-columns: 1fr;
+  max-width: 760px;
+}
+
+.contact-grid-simple .contact-methods {
+  padding: 1.7rem;
+}
