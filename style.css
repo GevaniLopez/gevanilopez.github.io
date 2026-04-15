@@ -985,26 +985,6 @@ section p {
   margin-top: 0.25rem;
 }
 
-.contact-ghost-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 52px;
-  padding: 0.95rem 1.3rem;
-  border-radius: 999px;
-  text-decoration: none;
-  color: var(--text);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.05);
-  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-}
-
-.contact-ghost-btn:hover {
-  transform: translateY(-2px);
-  border-color: var(--sand);
-  color: var(--sand);
-}
-
 .contact-method-btn {
   display: inline-flex;
   align-items: center;
@@ -1283,21 +1263,8 @@ section p {
     padding: 1.35rem;
   }
 
-  .resume-big-btn,
-  .contact-ghost-btn {
+  .resume-big-btn {
     width: 100%;
-    justify-content: center;
-  }
-
-  .contact-inline-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-
-  .contact-inline-actions .primary-btn {
-    width: auto;
-    min-width: 0;
     justify-content: center;
   }
 }
@@ -1308,7 +1275,6 @@ section p {
   .project-fun-orb,
   .resume-download-btn,
   .resume-big-btn,
-  .contact-ghost-btn,
   .primary-btn,
   .hero-buttons a {
     transition: none;
